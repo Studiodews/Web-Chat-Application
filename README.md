@@ -1,4 +1,4 @@
 Web-Chat-Application
 ====================
-
-A simple PHP and JQUERY using AJAX chat
+Real Time Web Chat Application
+Implemented using PHP, JQUERY and AJAX 
