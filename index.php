@@ -52,7 +52,7 @@ else
 
     //If user submits the form
     $("#submitmsg").click(function(){
-         var clientmsg = $("#usermsg").val();
+        var clientmsg = $("#usermsg").val();
         //TODO encryption here
         $.post("post.php", {text: clientmsg});
         $("#usermsg").attr("value", "");
@@ -76,6 +76,6 @@ else
             }
         });
     }
-    setInterval (loadLog, 1000);	//Reload file every second
+    setInterval (loadLog, 1000);//Reload file every second
 
 </script>
