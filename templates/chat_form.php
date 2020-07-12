@@ -3,15 +3,16 @@
         <span class="green left margin_left_5">Hello</span>
 
         <span class="right" id="right_menu">
+            <!--Name is rendered here-->
             <span class="left"><?= $name; ?></span>
-            <!--<span class="left"><a id="clear" href="#">Clear Chat</a></span>-->
+
 
             <a href="#" ><button id="exit" class="right"> Close Chat</button></a>
 
         </span>
 
     </div>
-
+    <!--Chat is rendered here-->
     <div id="chatbox"></div>
 
     <form name="message" action="">

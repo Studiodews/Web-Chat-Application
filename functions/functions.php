@@ -7,8 +7,11 @@
  */
 function login()
 {
+    //this opens the file
     $fp = fopen("log.html", 'a');
+    //this reads the opened file and write appends 'a' html to the file
     fwrite($fp, "<div class='msgln'><i><span class='green'> ". $_SESSION['name'] ." </span>has entered the chat room.</i><br></div>");
+    //this closes the file
     fclose($fp);
 }
 
@@ -33,6 +36,7 @@ function logout()
 
 }
 
+// expects a template argument and some arrays, its set to empty array for now
 function render($template, $values = [])
 {
     // extract variables into local scope
@@ -51,7 +55,7 @@ function render($template, $values = [])
         require("templates/footer.php");
     }
 
-    //
+    // if template does not exist
     else
     {
         echo 'invalid template';
