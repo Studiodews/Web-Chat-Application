@@ -7,6 +7,32 @@
  */
 function login()
 {
+    //troubleshoot if file is being opened
+    /*
+    $file = fopen("log.html", 'a');
+
+    if (file_exists($file)){
+        echo "file exists <br>";
+    }
+    else{
+        echo "file does not exists <br>";
+    }
+    if ($file == FALSE) {
+        echo "error fopen <br>";
+    }
+    else{
+        echo "file is open <br>";
+    }
+    if(fwrite($file, "teste") == FALSE)
+    {
+        echo "error fwrite";
+    }
+    else{
+        echo "file is written <br>";
+    }
+    */
+    // end troubleshoot
+
     //this opens the file
     $fp = fopen("log.html", 'a');
     //this reads the opened file and write appends 'a' html to the file

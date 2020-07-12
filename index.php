@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST")
         // $defaultname="Enter Username";
 
         // checks if a name was entered
+        // We still need additional checks if name has spaces but not empty
         if (isset($_POST["name"]))
         {
             // removes //#$%^^& or any hacky characters
